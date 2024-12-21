@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suthy Screams</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg">
+    <link rel="shortcut icon" href="my-favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Suthy Screams">
+    <link rel="manifest" href="my-favicon/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="float">
+            <a href="https://www.instagram.com/uwecsutherland/"><img src="images/instagram.svg" alt="Instagram Logo"></a>
+            <div class="overlay toggle-nav"></div>
+            <div class="hamburger" onclick="toggleNav()">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <nav class="toggle-nav">
+                <div></div>
+                <a href="index.html">HAUNTED HOME PAGE</a>
+                <a href="about.html">ABOUT</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="volunteer.html">VOLUNTEER</a>
+                <a href="contact.html">CONTACT US</a>
+                <div></div>
+            </nav>
+        </div>
+    </header>
+    <main class="volunteer">
+        <div>
+            <h2>VOLUNTEER INFORMATION</h2>
+            <p>Do you want to be part of the team that helps set up or run the Haunted House? Let us know by filling out the form below, no experience is required, we are always happy to have volunteers.</p>
+        </div>
+        <section>
+            <div>
+                <h3>SCARE ACTOR VOLUNTEER INFORMATION</h3>
+                <p>Scare actors are the heart of the Haunted House and the one that volunteers seem to enjoy the most. It's not every day that you get to yell at people to run away! We provide all the costume and makeup you would need to be a scare actor, but if you have something of your own you are free to bring that as well. Work one night or both and be ready to drink lots of water and wake up sore, because screaming for three hours is hard work.</p>
+            </div>
+            <div>
+                <h3>MAKEUP VOLUNTEER INFORMATION</h3>
+                <p>Makeup artists are some of the most underappreciated talents in a Haunted House. Adding makeup to a costume makes it feel complete, and just like with the scare actors, we have makeup for you to use, but you are always welcome to bring your own. This also isn't as long of a commitment as being a scare artist, however lots of makeup artists do both. You only need to be there for about an hour.</p>
+            </div>
+            <div>
+                <h3>SET UP VOLUNTEER INFORMATION</h3>
+                <p>Set up volunteers help get the Haunted House ready by getting the walls put up and decorating the rooms. It's like Animal Crossing but with blood! Set up doesn't usually start until the day of, with only a little bit happening before that. This means you have to build an entire Haunted House in a day. It goes by quick, but it is exciting!</p>
+            </div>
+            <div>
+                <h3>GENERAL VOLUNTEER INFORMATION</h3>
+                <p>Want to help out but none of the other options sound interesting? You can be a general volunteer for helping with things such as the fire that happens in Sutherlands fire at the end of the Haunted House, collecting money, or even just watch as people run out screaming from the back door!</p>
+            </div>
+        </section>
+        <section>
+            <h3 class="form">VOLUNTEER CONTACT INFORMATION FORM</h3>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="type">Type of volunteer:</label>
+                    <select id="type">
+                        <option>Scare Actor</option>
+                        <option>Makeup</option>
+                        <option>Set Up</option>
+                        <option>General</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="availability">Availability:</label>
+                    <select id="availability">
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="last" type="reset">
+                    <input class="last" type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,302 @@
+@font-face{
+    font-family: Chiller;
+    src: url(chiller.ttf);
+}
+@font-face{
+    font-family: Century-Gothic;
+    src: url(centurygothic.ttf);
+}
+body{
+    background-color: #1a1a1a;
+    font-family: Chiller, Century-Gothic, sans-serif;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: row-reverse;
+}
+header img{
+    min-width: 50px;
+}
+.float{
+    display: flex;
+    position: fixed;
+    top: 1rem;
+}
+.float>a{
+    padding: 0 1rem;
+    z-index: 2;
+    align-self: center;
+}
+header nav{
+    position: fixed;
+    left: 100%;
+    width: 33%;
+    background-color: #000000;
+    transition-property: left;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+header nav a{
+    display: block;
+    color: #fff;
+    padding: 3rem;
+    font-size: larger;
+}
+header nav a:hover{
+    color: #cccccc;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+header nav.show{
+    left: 67%;
+}
+.hamburger{
+    width: 40px;
+    z-index: 2;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.hamburger hr{
+    margin: .75rem 0;
+    border: 2px solid white;
+}
+nav.toggle-nav>div:first-child{
+    position: relative;
+    height: calc(20px + 2rem);
+    top: -1rem;
+    background-color: #000000;
+}
+nav.toggle-nav>div:last-child{
+    height: 100vh;
+}
+.logo{
+    max-width: 300px;
+}
+dialog.show{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    background-color: #cccccc;
+    color: #000000;
+}
+h1{
+    margin: 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    right: 213px;
+    align-self: center;
+}
+.background{
+    padding: 1rem;
+}
+.background a{
+    color: #000000;
+    background-color: #c1272d;
+    border: 2px solid #000000;
+}
+.background a:hover{
+    background-color: #c7373c;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+
+}
+.background h2{
+    color: #fff;
+    text-align: center;
+}
+.background div{
+    display: flex;
+}
+.column div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column a{
+    padding: 2.5rem;
+    margin: 1rem 0;
+    min-width: 250px;
+    text-align: center;
+    font-size: 2rem;
+}
+.column h2{
+    margin: 2.5rem;
+    font-size: 2.5rem;
+}
+.background:first-child{
+    background-image: url(images/index/fade.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background:first-child div{
+    padding: calc(2rem + 50px) 0 0 0;
+}
+.background:nth-child(2){
+    background-image: url(images/index/index2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background:nth-child(3){
+    background-image: url(images/index/index3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background:nth-child(4){
+    background-image: url(images/index/index4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background:last-child{
+    background-image: url(images/index/index5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main section{
+    min-height: 300px;
+}
+main.about, main.volunteer, main.contact, main.gallery{
+    margin: 1rem;
+    padding: 2rem 0 0 0;
+}
+main.about section{
+    background-color: #c1272d;
+    margin: 1rem;
+}
+main.about div{
+    padding: 1rem;
+}
+main.about p{
+    font-family: Century-Gothic, Chiller, sans-serif;
+}
+main.volunteer section{
+    background-color: #c1272d;
+    margin: 1rem;
+}
+main.volunteer>div{
+    text-align: center;
+    color: #fff;
+}
+main.volunteer section div{
+    padding: 1rem;
+}
+main.volunteer p{
+    font-family: Century-Gothic, Chiller, sans-serif;
+}
+form{
+    padding: 1rem;
+    font-family: Century-Gothic, Chiller, sans-serif;
+}
+label{
+    padding: 0 1rem 0 0;
+}
+.form{
+    padding: 1rem 1rem 0;
+}
+.last{
+    margin: 0 .5rem;
+    min-width: 100px;
+}
+main.contact section{
+    background-color: #c1272d;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+main.contact img{
+    max-width: 200px;
+}
+main.contact p{
+    font-family: Century-Gothic, Chiller, sans-serif;
+    padding: 1rem 0 0 0;
+}
+.ghost{
+    background-image: url(images/fade3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 160vh;
+    max-height: 1000px;
+}
+main.contact h2{
+    font-size: 60px;
+}
+main.contact div{
+    max-width: 500px;
+}
+main.contact section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main.gallery{
+    margin: 1rem;
+}
+main.gallery section{
+    background-color: #c1272d;
+    margin: 1rem;
+}
+main.gallery img{
+    max-width: 150px;
+    max-height: 150px;
+}
+main.gallery div{
+    padding: 1rem;
+}
+main.gallery img{
+    float: left;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
+}
+main.gallery p{
+    font-family: Century-Gothic, Chiller, sans-serif;
+}
+main.gallery{
+    text-align: center;
+}
+@media (min-width:1000px){
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .group3{
+        grid-row: 2/3;
+    }
+    .group4{
+    grid-row: 3/4;
+    }
+    section:nth-child(2) h2, section:nth-child(3) h2, section:nth-child(4) h2{
+        grid-area: 1/2/2/5;
+    }
+}
+@media (max-width:1000px){
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .group1{
+        grid-column: 1/2;
+    }
+    .group2{
+        grid-column: 2/3;
+    }
+    section:nth-child(2) h2, section:nth-child(3) h2, section:nth-child(4) h2{
+        grid-area: 1/1/2/3;
+    }
+}
